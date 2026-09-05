@@ -1,0 +1,52 @@
+{
+  "status": "success",
+  "data": {
+    "artifact": {
+      "filename": "sensor_embeddings_numpy.pkl",
+      "type": "numpy.ndarray",
+      "size_bytes": 28954,
+      "size_formatted": "28.28 KB",
+      "python_type": "ndarray",
+      "module": "numpy"
+    },
+    "category": "numpy",
+    "dataset": null,
+    "columns": [],
+    "data_quality": null,
+    "statistics": null,
+    "correlations": null,
+    "outliers": null,
+    "visualizations": {},
+    "target_analysis": null,
+    "model": null,
+    "pipeline": null,
+    "container": null,
+    "numpy_info": {
+      "dimensions": 2,
+      "shape": [
+        300,
+        24
+      ],
+      "dtype": "float32",
+      "size": 7200,
+      "statistics": {
+        "min": -4.0646,
+        "max": 3.7775,
+        "mean": -0.0007,
+        "std": 0.9256,
+        "sparsity_zero_count": 1063,
+        "sparsity_percentage": 14.76
+      }
+    },
+    "insights": [
+      {
+        "category": "NumPy",
+        "icon": "Grid",
+        "title": "2D NumPy Array (300 \u00d7 24)",
+        "content": "Array contains 7,200 elements of type 'float32'.",
+        "sentiment": "info"
+      }
+    ],
+    "errors": []
+  }
+}

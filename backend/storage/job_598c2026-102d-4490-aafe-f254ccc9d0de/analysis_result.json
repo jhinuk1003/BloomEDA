@@ -1,0 +1,139 @@
+{
+  "status": "success",
+  "data": {
+    "artifact": {
+      "filename": "trained_model_bundle.pkl",
+      "type": "builtins.dict",
+      "size_bytes": 1448,
+      "size_formatted": "1.41 KB",
+      "python_type": "dict",
+      "module": "builtins"
+    },
+    "category": "container",
+    "dataset": null,
+    "columns": [],
+    "data_quality": null,
+    "statistics": null,
+    "correlations": null,
+    "outliers": null,
+    "visualizations": {},
+    "target_analysis": null,
+    "model": {
+      "model_class": "LogisticRegression",
+      "library": "sklearn",
+      "module": "sklearn.linear_model._logistic",
+      "estimator_type": "Classifier",
+      "parameters": {
+        "C": "0.15",
+        "class_weight": "None",
+        "dual": "False",
+        "fit_intercept": "True",
+        "intercept_scaling": "1",
+        "l1_ratio": "0.0",
+        "max_iter": "200",
+        "n_jobs": "None",
+        "penalty": "deprecated",
+        "random_state": "42",
+        "solver": "lbfgs",
+        "tol": "0.0001",
+        "verbose": "0",
+        "warm_start": "False"
+      },
+      "fitted_attributes": {
+        "n_features_in": 2,
+        "classes": [
+          "0",
+          "1"
+        ],
+        "n_iterations": "[4]"
+      },
+      "evaluation_metrics": null,
+      "evaluation_note": "No evaluation metrics were stored in this artifact."
+    },
+    "pipeline": null,
+    "container": {
+      "container_type": "dictionary_bundle",
+      "total_keys": 6,
+      "keys_summary": [
+        {
+          "key": "model",
+          "type": "sklearn.linear_model._logistic.LogisticRegression",
+          "preview": "LogisticRegression(C=0.15, max_iter=200, random_state=42)"
+        },
+        {
+          "key": "scaler",
+          "type": "sklearn.preprocessing._data.StandardScaler",
+          "preview": "StandardScaler()"
+        },
+        {
+          "key": "feature_names",
+          "type": "builtins.list",
+          "preview": "['tenure_months', 'monthly_charges']"
+        },
+        {
+          "key": "target_name",
+          "type": "builtins.str",
+          "preview": "churn"
+        },
+        {
+          "key": "evaluation_metrics",
+          "type": "builtins.dict",
+          "preview": "{'accuracy': 0.814, 'roc_auc': 0.862, 'f1_score': 0.748, 'precision': 0.763, 're"
+        },
+        {
+          "key": "metadata",
+          "type": "builtins.dict",
+          "preview": "{'model_name': 'Customer Churn Logistic Estimator', 'author': 'Botanical ML Labo"
+        }
+      ],
+      "tree": {
+        "model": "<sklearn.linear_model._logistic.LogisticRegression>",
+        "scaler": "<sklearn.preprocessing._data.StandardScaler>",
+        "feature_names": [
+          "tenure_months",
+          "monthly_charges"
+        ],
+        "target_name": "churn",
+        "evaluation_metrics": {
+          "accuracy": 0.814,
+          "roc_auc": 0.862,
+          "f1_score": 0.748,
+          "precision": 0.763,
+          "recall": 0.734
+        },
+        "metadata": {
+          "model_name": "Customer Churn Logistic Estimator",
+          "author": "Botanical ML Laboratory",
+          "dataset_version": "v2.4",
+          "created_at": "2026-09-01",
+          "environment": "Python 3.11 / Scikit-Learn 1.9.0"
+        }
+      }
+    },
+    "numpy_info": null,
+    "insights": [
+      {
+        "category": "Model Architecture",
+        "icon": "Cpu",
+        "title": "Trained LogisticRegression Detected",
+        "content": "The artifact stores a trained scikit-learn Classifier (LogisticRegression). It has 14 configured hyperparameters.",
+        "sentiment": "positive"
+      },
+      {
+        "category": "Classes",
+        "icon": "Tag",
+        "title": "Target Classification Classes",
+        "content": "Classifier was fitted on 2 classes: 0, 1.",
+        "sentiment": "info"
+      },
+      {
+        "category": "Container",
+        "icon": "FolderTree",
+        "title": "Machine Learning Artifact Bundle",
+        "content": "This artifact is an ML Container/Dictionary bundle with 6 primary keys (model, scaler, feature_names, target_name, evaluation_metrics).",
+        "sentiment": "info"
+      }
+    ],
+    "errors": []
+  }
+}
