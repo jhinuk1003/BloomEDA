@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Soft warm radial glow -->
+    <radialGradient id="flowerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCEEE9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background disc in warm cream -->
+  <circle cx="32" cy="32" r="30" fill="#FAF7F2" stroke="#E7DFD5" stroke-width="2"/>
+  <circle cx="32" cy="32" r="28" fill="url(#flowerGlow)"/>
+
+  <!-- Sage Leaf flanking the stem -->
+  <path d="M32 38 C32 48 30 56 32 60" stroke="#7E9A82" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="23" cy="46" rx="8" ry="4" transform="rotate(-32 23 46)" fill="#7E9A82" fill-opacity="0.75"/>
+  <ellipse cx="41" cy="44" rx="8" ry="4" transform="rotate(28 41 44)" fill="#7E9A82" fill-opacity="0.75"/>
+
+  <!-- 5 Terracotta Petals -->
+  <!-- Top -->
+  <circle cx="32" cy="20" r="8" fill="#C86D51" fill-opacity="0.95"/>
+  <!-- Top Right -->
+  <circle cx="42" cy="27" r="8" fill="#C86D51" fill-opacity="0.95"/>
+  <!-- Bottom Right -->
+  <circle cx="38" cy="39" r="8" fill="#C98474" fill-opacity="0.95"/>
+  <!-- Bottom Left -->
+  <circle cx="26" cy="39" r="8" fill="#C98474" fill-opacity="0.95"/>
+  <!-- Top Left -->
+  <circle cx="22" cy="27" r="8" fill="#C86D51" fill-opacity="0.95"/>
+
+  <!-- Golden Core Pistil -->
+  <circle cx="32" cy="30" r="5.5" fill="#D4AF37" stroke="#FFFFFF" stroke-width="1.2"/>
+  <circle cx="32" cy="30" r="3" fill="#A87922"/>
+</svg>

@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #3A3027;
+  --parchment-card: #FFFFFF;
+  --parchment-subtle: #F4EFEB;
+  --border-botanical: #E7DFD5;
+  --terracotta: #C86D51;
+  --terracotta-hover: #B2583D;
+  --dusty-rose: #C98474;
+  --sage: #7E9A82;
+  --sage-dark: #56735A;
+  --peach: #FCEEE9;
+  --gold: #C69234;
+  --earth-muted: #786B60;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  background-image: radial-gradient(#E8DFC8 0.65px, transparent 0.65px), radial-gradient(#E8DFC8 0.65px, #FAF7F2 0.65px);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+}
+
+/* Botanical Card Styles */
+.botanical-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-botanical);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px -2px rgba(90, 70, 50, 0.05), 0 2px 6px -1px rgba(90, 70, 50, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.botanical-card:hover {
+  border-color: rgba(200, 109, 81, 0.35);
+  box-shadow: 0 10px 28px -4px rgba(90, 70, 50, 0.08), 0 4px 10px -2px rgba(200, 109, 81, 0.06);
+}
+
+/* Terracotta Button */
+.btn-terracotta {
+  background-color: var(--terracotta);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 12px rgba(200, 109, 81, 0.25);
+}
+
+.btn-terracotta:hover {
+  background-color: var(--terracotta-hover);
+  box-shadow: 0 6px 18px rgba(200, 109, 81, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-terracotta:active {
+  transform: translateY(0);
+}
+
+/* Sage Button */
+.btn-sage {
+  background-color: var(--sage);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 12px rgba(126, 154, 130, 0.25);
+}
+
+.btn-sage:hover {
+  background-color: var(--sage-dark);
+  box-shadow: 0 6px 18px rgba(126, 154, 130, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Paper / Botanical Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EFEB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CEBF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C86D51;
+}
+
+/* Serif Headings */
+.font-serif-botanical {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Pulsing Leaf & Flower animations */
+@keyframes sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-sway {
+  animation: sway 6s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+.animate-float {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+@keyframes petal-drift {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.6; }
+  100% { transform: translate(60px, 120px) rotate(90deg); opacity: 0; }
+}
+
+.animate-petal {
+  animation: petal-drift 12s linear infinite;
+}
